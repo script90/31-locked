@@ -29,7 +29,7 @@ dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
 [[ ! -d /etc/bot/suspensos ]] && mkdir /etc/bot/suspensos
 [[ ! -e /etc/bot/lista_ativos ]] && touch /etc/bot/lista_ativos
 [[ ! -e /etc/bot/lista_suspensos ]] && touch /etc/bot/lista_suspensos
-echo -e 'by: @crazy_vpn' >/usr/lib/sshplus && cat /usr/lib/sshplus >$lst2/licence
+echo -e 'by: @CRAZY_VPN' >/usr/lib/sshplus && cat /usr/lib/sshplus >$lst2/licence
 netstat -nplt | grep -w 'apache2' | grep -w '80' && sed -i "s/Listen 80/Listen 81/g" /etc/apache2/ports.conf && service apache2 restart
 wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/script90/30/master/scripts/sshd_config > /dev/null 2>&1
 service ssh restart
